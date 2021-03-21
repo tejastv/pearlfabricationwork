@@ -27729,7 +27729,7 @@ body:after {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../images/loading.gif) no-repeat;
+  /* background: url(../images/loading.gif) no-repeat; */
 }
 
 .lb-nav {
@@ -28948,3 +28948,8 @@ form.signin-form {
 }
 
 /*# sourceMappingURL=style-freedom.css.map */
+
+.location {
+  color: #fe5a0e;
+  font-size: 26px;
+}
