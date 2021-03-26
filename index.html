@@ -15,9 +15,22 @@ Author URL: http://w3layouts.com
   <!-- google fonts -->
   <link href="//fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="//fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="assets/images/parleLogo.ico"/>
+  <link rel="icon" type="image/png" href="assets/images/parleLogo.ico" />
   <!-- Template CSS -->
   <link rel="stylesheet" href="assets/css/style-starter.css">
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/602e4e7c918aa26127401bbb/1euqe55nf';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 </head>
 
 <body>
@@ -27,8 +40,8 @@ Author URL: http://w3layouts.com
       <nav class="navbar navbar-expand-lg navbar-dark stroke">
         <h1>
           <a class="navbar-brand" href="index.html">
-            <!-- <img src="assets/images/parleLogo.png" alt=""> -->
-            <span class="fa fa-industry"></span> Pearl <span class="logo">&nbsp;Fabrication</span>
+            <img src="assets/images/parleLogo.jpg" alt="">
+            <!-- <span class="fa fa-industry"></span> Pearl <span class="logo">&nbsp;Fabrication</span> -->
           </a>
         </h1>
 
@@ -37,16 +50,16 @@ Author URL: http://w3layouts.com
           <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
       </a> -->
         <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
-        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-        <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-        </span>
-      </button>
+          data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </span>
+        </button>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mx-lg-auto">
-          <!-- <li class="nav-item active">
+            <!-- <li class="nav-item active">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item @@about__active">
@@ -55,17 +68,17 @@ Author URL: http://w3layouts.com
           <li class="nav-item @@services__active">
             <a class="nav-link" href="services.html">Services</a>
           </li> -->
-          <li class="nav-item @@contact__active d-lg-none">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+            <li class="nav-item @@contact__active d-lg-none">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
 
         <div class="top-quote mr-lg-2 mt-lg-0 mt-3 d-lg-block d-none">
           <a href="contact.html" class="btn btn-style btn-primary">Get a Quote</a>
         </div>
         <!-- toggle switch for light and dark theme -->
-        <div class="mobile-position">
+        <div class="mobile-position" style="top:auto;">
           <nav class="navigation">
             <div class="theme-switch-wrapper">
               <label class="theme-switch" for="checkbox">
@@ -94,8 +107,8 @@ Author URL: http://w3layouts.com
                 <div class="container">
                   <div class="banner-info-bg">
                     <h5>We will provide the best <span>Industrial</span> service</h5>
-                    <p class="mt-4 pr-lg-4">Industrious is the production of goods or related services
-                      here within an economy indicator of its relevant. </p>
+                    <!-- <p class="mt-4 pr-lg-4">Industrious is the production of goods or related services
+                      here within an economy indicator of its relevant. </p> -->
                     <!-- <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="about.html"> Learn
                                         More</a> -->
                   </div>
@@ -111,8 +124,8 @@ Author URL: http://w3layouts.com
                 <div class="container">
                   <div class="banner-info-bg">
                     <h5>We provides effective <span>Building</span> solutions</h5>
-                    <p class="mt-4 pr-lg-4">Industrious is the production of goods or related services
-                      here within an economy indicator of its relevant. </p>
+                    <!-- <p class="mt-4 pr-lg-4">Industrious is the production of goods or related services
+                      here within an economy indicator of its relevant. </p> -->
                     <!-- <a class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2" href="about.html"> Learn
                                         More</a> -->
                   </div>
@@ -248,22 +261,22 @@ Author URL: http://w3layouts.com
         <div class="mx-auto">
           <!--Horizontal Tab-->
           <div id="parentHorizontalTab">
-            <ul class="resp-tabs-list hor_1">
-              <li>All Project</li>
-              <li>Railings</li>
-              <li>Gates</li>
-              <li>Structure</li>
-              <li>Staircase</li>
-              <li>Loft</li>
-              <li>Grill</li>
-              <li>Roof and Shade</li>
-              <li>Others</li>
+            <ul class="resp-tabs-list hor_1 filter-button-group">
+              <li data-filter="*" id="allprojects">All Project</li>
+              <li data-filter=".ralling">Railings</li>
+              <li data-filter=".gates">Gates</li>
+              <li data-filter=".structure">Structure</li>
+              <li data-filter=".staircase">Staircase</li>
+              <li data-filter=".loft">Loft</li>
+              <li data-filter=".grill">Grill</li>
+              <li data-filter=".rns">Roof and Shade</li>
+              <li data-filter=".others">Others</li>
               <div class="clear"></div>
             </ul>
             <div class="resp-tabs-container hor_1">
-              <div class="products-content">
-                <div class="row">
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+              <div class="products-content ">
+                <div class="row grid-box">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item others">
                     <div class="content">
                       <a href="assets/images/projects/1.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -273,7 +286,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item others">
                     <div class="content">
                       <a href="assets/images/projects/2.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -283,7 +296,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item others">
                     <div class="content">
                       <a href="assets/images/projects/3.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -293,7 +306,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item others">
                     <div class="content">
                       <a href="assets/images/projects/4.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -303,7 +316,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item others">
                     <div class="content">
                       <a href="assets/images/projects/5.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -313,7 +326,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item gates">
                     <div class="content">
                       <a href="assets/images/projects/6.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -323,7 +336,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item grill">
                     <div class="content">
                       <a href="assets/images/projects/7.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -333,7 +346,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item grill">
                     <div class="content">
                       <a href="assets/images/projects/8.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -343,7 +356,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item structure">
                     <div class="content">
                       <a href="assets/images/projects/9.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -353,7 +366,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item structure">
                     <div class="content">
                       <a href="assets/images/projects/10.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -363,7 +376,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item structure loft">
                     <div class="content">
                       <a href="assets/images/projects/11.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -373,7 +386,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item ralling">
                     <div class="content">
                       <a href="assets/images/projects/12.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -383,7 +396,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item grill">
                     <div class="content">
                       <a href="assets/images/projects/13.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -393,7 +406,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item others">
                     <div class="content">
                       <a href="assets/images/projects/14.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -403,7 +416,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <!-- <div class="col-lg-3 col-md-4 col-sm-6 element-item ralling">
                     <div class="content">
                       <a href="assets/images/projects/15.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -412,8 +425,8 @@ Author URL: http://w3layouts.com
                         </figure>
                       </a>
                     </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  </div> -->
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item rns">
                     <div class="content">
                       <a href="assets/images/projects/16.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -423,7 +436,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item gates">
                     <div class="content">
                       <a href="assets/images/projects/17.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -434,7 +447,7 @@ Author URL: http://w3layouts.com
                     </div>
                   </div>
 
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item grill">
                     <div class="content">
                       <a href="assets/images/projects/19.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -445,7 +458,7 @@ Author URL: http://w3layouts.com
                     </div>
                   </div>
 
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item ralling">
                     <div class="content">
                       <a href="assets/images/projects/21.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -455,7 +468,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item ralling">
                     <div class="content">
                       <a href="assets/images/projects/22.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -465,7 +478,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item ralling">
                     <div class="content">
                       <a href="assets/images/projects/23.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -475,7 +488,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item ralling">
                     <div class="content">
                       <a href="assets/images/projects/24.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -485,7 +498,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item ralling">
                     <div class="content">
                       <a href="assets/images/projects/25.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -495,7 +508,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item ralling">
                     <div class="content">
                       <a href="assets/images/projects/26.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -505,7 +518,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item grill">
                     <div class="content">
                       <a href="assets/images/projects/18.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -515,7 +528,7 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item ralling">
                     <div class="content">
                       <a href="assets/images/projects/27.jpg" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
@@ -525,304 +538,12 @@ Author URL: http://w3layouts.com
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
+                  <div class="col-lg-3 col-md-4 col-sm-6 element-item staircase">
                     <div class="content">
                       <a href="assets/images/projects/20.png" data-lightbox="example-set" class="mb-4"
                         data-title="lorem ipsum dolor sit amet">
                         <figure>
                           <img src="assets/images/projects/20.png" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="products-content">
-                <div class="row">
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/21.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/21.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/22.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/22.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/23.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/23.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/24.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/24.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/25.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/25.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/26.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/26.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/27.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/27.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="products-content">
-                <div class="row">
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/6.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/6.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/17.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/17.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="products-content">
-                <div class="row">
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/11.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/11.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/9.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/9.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/10.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/10.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="products-content">
-                <div class="row">
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/20.png" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/20.png" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="products-content">
-                <div class="row">
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/11.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/11.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="products-content">
-                <div class="row">
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/8.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/8.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/7.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/7.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/13.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/13.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/19.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/19.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/18.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/18.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="products-content">
-                <div class="row">
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/16.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/16.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="products-content">
-                <div class="row">
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/1.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/1.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/2.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/2.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/3.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/3.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/4.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/4.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/5.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/5.jpg" alt="product" class="img-fluid">
-                        </figure>
-                      </a>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="content">
-                      <a href="assets/images/projects/14.jpg" data-lightbox="example-set" class="mb-4"
-                        data-title="lorem ipsum dolor sit amet">
-                        <figure>
-                          <img src="assets/images/projects/14.jpg" alt="product" class="img-fluid">
                         </figure>
                       </a>
                     </div>
@@ -849,7 +570,7 @@ Author URL: http://w3layouts.com
           <p class="mt-lg-2 mt-2 mb-lg-1 mb-2">3. Small and large steel fabrication jobs undertaken.</p>
           <p class="mt-lg-2 mt-2 mb-lg-1 mb-2">4. Competitive rates.</p>
           <p class="mt-lg-2 mt-2 mb-lg-5 mb-2">5. Each customer is treated like an individual.</p>
-          <div class="progress-info info1">
+          <!-- <div class="progress-info info1">
             <h6 class="progress-tittle">Quality Services <span class="">80%</span></h6>
             <div class="progress">
               <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="90"
@@ -873,7 +594,7 @@ Author URL: http://w3layouts.com
                 aria-valuemin="0" aria-valuemax="100">
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="col-lg-6 stats mt-lg-0 mt-4 pl-lg-5 align-self">
           <div class="row">
@@ -1001,25 +722,6 @@ Author URL: http://w3layouts.com
   <!-- responsive tabs -->
   <script src="assets/js/easyResponsiveTabs.js"></script>
 
-  <!--Plug-in Initialisation-->
-  <script type="text/javascript">
-    $(document).ready(function () {
-      //Horizontal Tab
-      $('#parentHorizontalTab').easyResponsiveTabs({
-        type: 'default', //Types: default, vertical, accordion
-        width: 'auto', //auto or any width like 600px
-        fit: true, // 100% fit in a container
-        tabidentify: 'hor_1', // The tab groups identifier
-        activate: function (event) { // Callback function if tab is switched
-          var $tab = $(this);
-          var $info = $('#nested-tabInfo');
-          var $name = $('span', $info);
-          $name.text($tab.text());
-          $info.show();
-        }
-      });
-    });
-  </script>
 
   <script src="assets/js/owl.carousel.js"></script>
   <!-- script for banner slider-->
@@ -1200,6 +902,27 @@ Author URL: http://w3layouts.com
   <!--//MENU-JS-->
 
   <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+
+  <!--Plug-in Initialisation-->
+  <script type="text/javascript">
+    // init Isotope
+    var $grid = $('.grid-box').isotope({
+      // options
+      itemSelector: '.element-item',
+      layoutMode: 'fitRows',
+    });
+    // filter items on button click
+    $('.filter-button-group').on('click', 'li', function () {
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+    });
+    $(document).on("ready", function () {
+      setTimeout(() => {
+        document.getElementById('allprojects').click();
+      }, 1000);
+    })
+  </script>
 
 </body>
 
