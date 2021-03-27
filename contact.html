@@ -135,15 +135,18 @@ Author URL: http://w3layouts.com
             width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="col-lg-6 form-inner-cont mt-lg-0 mt-sm-5 mt-4">
-          <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+          <form id="contact-form" role="form" class="signin-form">
             <div class="form-input">
-              <input type="text" name="w3lName" id="w3lName" placeholder="Your name">
+              <input type="text" name="name" id="name" placeholder="Your name">
             </div>
             <div class="form-input">
-              <input type="email" name="w3lSender" id="w3lSender" placeholder="Your email address" required="">
+              <input type="text" name="mobile" id="mobile" placeholder="Your name">
             </div>
             <div class="form-input">
-              <textarea name="w3lMessage" id="w3lMessage" placeholder="Your message" required=""></textarea>
+              <input type="email" name="email" id="email" placeholder="Your email address" required="">
+            </div>
+            <div class="form-input">
+              <textarea name="message" id="message" placeholder="Your message" required=""></textarea>
             </div>
             <div class="text-right">
               <button type="submit" class="btn btn-style btn-primary">Submit</button>
@@ -267,168 +270,6 @@ Author URL: http://w3layouts.com
   <script src="assets/js/jquery-1.9.1.min.js"></script>
 
   <script src="assets/js/theme-change.js"></script>
-  <!-- responsive tabs -->
-  <script src="assets/js/easyResponsiveTabs.js"></script>
-
-  <!--Plug-in Initialisation-->
-  <script type="text/javascript">
-    $(document).ready(function () {
-      //Horizontal Tab
-      $('#parentHorizontalTab').easyResponsiveTabs({
-        type: 'default', //Types: default, vertical, accordion
-        width: 'auto', //auto or any width like 600px
-        fit: true, // 100% fit in a container
-        tabidentify: 'hor_1', // The tab groups identifier
-        activate: function (event) { // Callback function if tab is switched
-          var $tab = $(this);
-          var $info = $('#nested-tabInfo');
-          var $name = $('span', $info);
-          $name.text($tab.text());
-          $info.show();
-        }
-      });
-    });
-  </script>
-
-  <script src="assets/js/owl.carousel.js"></script>
-  <!-- script for banner slider-->
-  <script>
-    $(document).ready(function () {
-      $('.owl-one').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: false,
-        responsiveClass: true,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplaySpeed: 1000,
-        autoplayHoverPause: false,
-        responsive: {
-          0: {
-            items: 1,
-            nav: false
-          },
-          480: {
-            items: 1,
-            nav: false
-          },
-          667: {
-            items: 1,
-            nav: true
-          },
-          1000: {
-            items: 1,
-            nav: true
-          }
-        }
-      })
-    })
-  </script>
-  <!-- //script -->
-  <script>
-    $(document).ready(function () {
-      $('.owl-three').owlCarousel({
-        margin: 20,
-        nav: false,
-        dots: false,
-        responsiveClass: true,
-        autoplay: true,
-        autoplayTimeout: 5000,
-        autoplaySpeed: 1000,
-        autoplayHoverPause: false,
-        responsive: {
-          0: {
-            items: 2
-          },
-          480: {
-            items: 2
-          },
-          767: {
-            items: 3
-          },
-          992: {
-            items: 4
-          },
-          1280: {
-            items: 5
-          }
-        }
-      })
-    })
-  </script>
-
-  <!-- script for testimonials -->
-  <script>
-    $(document).ready(function () {
-      $('.owl-testimonial').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: true,
-        responsiveClass: true,
-        autoplay: false,
-        autoplayTimeout: 5000,
-        autoplaySpeed: 1000,
-        autoplayHoverPause: false,
-        responsive: {
-          0: {
-            items: 1,
-            nav: false
-          },
-          480: {
-            items: 1,
-            nav: false
-          },
-          667: {
-            items: 1,
-            nav: true
-          },
-          1000: {
-            items: 1,
-            nav: true
-          }
-        }
-      })
-    })
-  </script>
-  <!-- //script for testimonials -->
-
-  <script src="assets/js/jquery.magnific-popup.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.popup-with-zoom-anim').magnificPopup({
-        type: 'inline',
-
-        fixedContentPos: false,
-        fixedBgPos: true,
-
-        overflowY: 'auto',
-
-        closeBtnInside: true,
-        preloader: false,
-
-        midClick: true,
-        removalDelay: 300,
-        mainClass: 'my-mfp-zoom-in'
-      });
-
-      $('.popup-with-move-anim').magnificPopup({
-        type: 'inline',
-
-        fixedContentPos: false,
-        fixedBgPos: true,
-
-        overflowY: 'auto',
-
-        closeBtnInside: true,
-        preloader: false,
-
-        midClick: true,
-        removalDelay: 300,
-        mainClass: 'my-mfp-slide-bottom'
-      });
-    });
-  </script>
-
   <!-- disable body scroll which navbar is in active -->
   <script>
     $(function () {
@@ -467,6 +308,27 @@ Author URL: http://w3layouts.com
     });
   </script>
   <!--//MENU-JS-->
+
+  <script>
+    // action="send-mail.php" 
+    $('#contact-form').submit(function (e) {
+      console.log("innnnnnnnnn");
+      e.preventDefault(); // prevent from submitting form directly
+      $.ajax({
+        url: 'send-mail.php',
+        method: "POST",
+        data: $("#contact-form").serializeArray(), // convert all form data to array (key:value),
+        dataType: 'json',
+      })
+        .done(function (response) {
+          alert(response); // show the response
+          $("#contact-form").reset(); // reset the form
+        })
+        .fail(function (error) {
+          alert(error); // show the error.
+        });
+    })
+  </script>
 
   <script src="assets/js/bootstrap.min.js"></script>
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNYByxJy_pA_meF4DwLtiDjunpWOELmSg&callback=initMap"></script> -->
